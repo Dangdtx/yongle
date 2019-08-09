@@ -122,7 +122,7 @@
     props: ["id"],
 
     async created() {
-      let id = this.$route.pramps.id + ".html"
+      let id = this.id + ".html"
       let data = await detail_trick(this.id, id) 
       this.activeDetail = data.data.product
       this.adress = data.data.listPerform 

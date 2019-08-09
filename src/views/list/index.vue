@@ -19,8 +19,8 @@
         <div class="tl"  v-html= "ppp">  </div> 
       </div>
       <div>
-        <router-link tag="div" class="goods-list" v-for="(item,index) in activelist"  
-        to="{name:'detail',params:(id:item.PRODUCTID)}"
+        <v-touch tag="div" class="goods-list" v-for="(item,index) in activelist"  
+        
         @tap="handleToDetail(item.PRODUCTID)" :key="index" >
           <a :href="'-'+item.PRODUCTID +'.html'" class="goods-con">
             <div class="left">
@@ -42,7 +42,7 @@
               </span>
             </div>
           </a>
-        </router-link>
+        </v-touch>
       </div>
       <!---->
     </div>
@@ -79,7 +79,7 @@ export default {
       this.$router.back()
     },
     handleToDetail(id){
-     // this.$router.push({name:"detail",params:{id}})
+       this.$router.push({name:"detail",params:{id}})
     }
   }
 };
