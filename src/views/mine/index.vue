@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
 <div class="page mine">   
             <div class="product personal pb50 lianmeng">
               <div class="personal-head">
@@ -79,10 +80,25 @@
        
  
 </div>
+=======
+    <div class="box">
+        <header>
+
+        </header>
+        <section>
+
+        </section>
+        <footer>
+
+        </footer>
+        
+    </div>
+>>>>>>> yang
 </template>
 <script>
 
 export default {
+<<<<<<< HEAD
   name: "Mine",
   components: {}
 };
@@ -208,5 +224,26 @@ img {vertical-align: top;}
 .personal-content .btn-list p a i, .personal-content .orders-btn a i, .personal .con .top .right a {
     background: url(//m2static.228.cn/img/31af021.png) no-repeat;
     background-size: .25rem;
+=======
+    name:"Mine"
+}
+</script>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    font-size:100px;
+}
+header{
+    width:calc(100% - .8rem);
+    height:.4rem;
+    text-align:center;
+    line-height:.4rem;
+    padding:.4rem;
+
+>>>>>>> yang
 }
 </style>

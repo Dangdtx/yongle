@@ -1,14 +1,15 @@
 <template>
-    <div class="sort">
-        sort
+    <div>
+        <Header/>
     </div>
 </template>
 
 <script>
 export default {
-     name:"Sort"
+    name:"First"
 }
 </script>
+
 <style>
 
 </style>
