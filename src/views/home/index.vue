@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        home11111111第二次该
+        home 
     </div>
 </template>
 

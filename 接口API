@@ -1,3 +1,16 @@
 
 首页
 https://m.228.cn/server/content/unionHead.json  
+
+
+
+活动列表 https://m.228.cn/server/subject/list.json 
+活动二次加载https://m.228.cn/server/subject/more.json?pageNum=2
+活动三次加载https://m.228.cn/server/subject/more.json?pageNum=3
+
+活动list  通过URL请求
+https://m.228.cn/server/subject/detail-xihabaofupu1019.json
+
+谢春花https://m.228.cn/server/subject/detail-xiechunhua0621.json
+
+城市列表https://m.228.cn/server/content/getCityByName.json

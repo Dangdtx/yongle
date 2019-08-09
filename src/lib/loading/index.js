@@ -15,16 +15,18 @@ export default ()=>{
     let LoadingComponent = Vue.extend(Loading)
    let vm =  new LoadingComponent({
         el:document.createElement("div"),
-      
+        data:{
+            flag:false
+        },
         methods:{
             handleMount(){
-                  document.body.appendChild(vm.$mount().$el);
+                this.flag = true; 
             },
             handleDestroy(){
-                document.body.removeChild(vm.$mount().$el);
+                this.flag = false; 
             }
         }
     })
-  
+   document.body.appendChild(vm.$mount().$el);
     return vm;
 }
