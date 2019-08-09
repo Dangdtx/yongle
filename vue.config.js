@@ -5,8 +5,7 @@ module.exports = {
          "/server":{
                 target:"https://m.228.cn",
                 changeOrigin:true,
-            },
-             
+            }
         }
     },
     // 代替../

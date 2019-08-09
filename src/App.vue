@@ -1,10 +1,11 @@
 <template>
-  <div id="app"> 
+  <div id="app">  
     <keep-alive>
        <router-view></router-view> 
     </keep-alive>
    
     <TabBar v-if="$route.meta.flag" />  
+ 
   </div>
 </template>
 
@@ -41,5 +42,8 @@ export default {
 
 
 <style lang="scss">
+#app {
+  height:100%;
+}
  
 </style>

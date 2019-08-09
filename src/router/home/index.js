@@ -2,8 +2,9 @@
      path:"/home",
      component:()=>import("views/home"),
      name:"home",
-     meta:{
+     meta:{ 
         flag:true,
         auth:false
     }
+ 
  }
