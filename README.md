@@ -12,6 +12,7 @@
     swiper
     Token验证
     vue-loader  文件转义 识别vue文件
+    vue-touch  vue点击事件
 
 ###项目依赖
 ```JavaScript

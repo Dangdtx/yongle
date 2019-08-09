@@ -1,7 +1,7 @@
 <template>
   <div id="app"> 
     <router-view></router-view>
-    <TabBar />  
+    <TabBar v-if="$route.meta.tabBar"></TabBar>  
   </div>
 </template>
 
@@ -28,5 +28,8 @@ export default {
 
 
 <style lang="scss">
+#app {
+  height:100%;
+}
  
 </style>
