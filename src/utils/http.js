@@ -1,9 +1,9 @@
 import axios from "axios";
 import qs from "qs";
-import Loading from "lib/loading/index.js"
+// import Loading from "lib/loading/index.js"
 
 // 解决删除loading的问题  vm 在进行创建和删除的是同一个
-let vm = Loading();
+// let vm = Loading();
 const server = axios.create({
     // baseUEL:""
     timeout:5000,
@@ -17,7 +17,7 @@ server.interceptors.request.use((config)=>{
         config.headers["content-type"] ="appliaction/x-www/form-urlencoded";
         // config.data = qs.stringify(config.data)
     }
-    vm.handleMount()
+    // vm.handleMount()
     return config
 },(err)=>{
     Promise.reject(err);
@@ -25,7 +25,7 @@ server.interceptors.request.use((config)=>{
 // 响应拦截器
 server.interceptors.response.use((res)=>{
     if(res.statusText == "OK"){
-        vm.handleDestroy();
+        // vm.handleDestroy();
         return res.data
     }
 },(err)=>{
