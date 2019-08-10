@@ -3,7 +3,8 @@
             <router-link v-for="(item,index) in texts"
                         :key="index"
                         tag="a"
-                        to="/narrate">
+                        :to="item.path">
+
                 <i class="iconfont" v-html=item.icon></i>
                 <span>{{item.name}}</span>
             </router-link>
@@ -17,37 +18,48 @@ export default {
             
             texts:[{
                 icon:'&#xe610',
-                name:'演唱会'
+
+                name:'演唱会',
+                path:'/sort'
             },
             {
                 icon:'&#xe710',
-                name:'话剧舞台剧'
+                name:'话剧舞台剧',
+                path:'/sort'
             },
             {
                 icon:'&#xe68a',
-                name:'体育赛事'
+                name:'体育赛事',
+                path:'/sort'
+
 
             },
             {
                 icon:'&#xe615',
-                name:'儿童亲子'
+                name:'儿童亲子',
+                path:'/sort'
             },
             {
                 icon:'&#xe624',
-                name:'全部分类'
+                name:'全部分类',
+                path:"/sort"
             },
             {
                 icon:'&#xe631',
-                name:'活动'
+                name:'活动',
+                path:'/activies'
+
             },
             {
                 icon:'&#xe611',
                 name:'永乐说',
+                path:'/narrate'
                
             },
             {
                 icon:'&#xe632',
-                name:'我的'
+                name:'我的',
+                path:'/mine'
             }]
         }
     }

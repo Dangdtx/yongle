@@ -1,5 +1,5 @@
 <template>
-<<<<<<< HEAD
+
     <div class="wrapper" ref="wrapper">
         <slot></slot>
     </div>
@@ -47,37 +47,5 @@ export default {
 <style>
     .wrapper{ 
         height:100%;
-=======
-    <div class="wapper" ref="wrapper">
-       <slot></slot>
-    </div>
-
-</template>
-
-<script>
-import BScroll from 'better-scroll'
-export default {
-    name:"yzz-BScroll",
-    mounted() {
-        this.scroll = new BScroll(this.$refs.wrapper,{
-            tap:true,
-            pullDownRefresh:true
-        })
-    },
-    methods: {
-        handlepullingDown(){
-            this.scroll.on("pullingDown",()=>{
-                callback();
-            })
-        }
-    },
-}
-</script>
-
-<style>
-    .wapper{
-        height:100%;
-
->>>>>>> yang
     }
 </style>

@@ -4,7 +4,10 @@
             <div class="one" 
                 v-for="(item,index) in recommendPage" 
                 :key="index"
-                @click="clickHandlerToDetail(item)">
+                
+                @click="clickHandlerToDetail(item)"
+                tag="div"
+                >
                 <img :src="item.PBIGIMG|toImg" alt="">
                 <p>{{item.NAME}}</p>
                 <div class="time">{{item.BEGINDATE|ToTime}}-{{item.ENDDATE|ToTime}}</div> 
@@ -13,6 +16,9 @@
             </div>
            
         </div>
+
+        <!-- PRODUCTID -->
+
     </div>
 </template>
 <script>
@@ -33,11 +39,18 @@ export default {
     methods:{
         clickHandlerToDetail(params) {
             console.log(params)
+
+            this.$router.push({name:'detail',params:{id:params.PRODUCTID}})
+
         }
     },
     async activated() {
         let data = await home_now_api(this.CITYJX)
+
         console.log(data)
+
+   
+
         this.recommendPage=data.data.recommendPage.list
     },
     async created() {

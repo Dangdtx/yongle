@@ -123,6 +123,7 @@ img {
     text-align: center;
 }
 .load-more a{
+    font-size:.14rem;
     color: #ff2959;
 }
 </style>

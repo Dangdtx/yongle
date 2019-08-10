@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 <template>
     <div class="box">
          <header class="head-tit">
@@ -88,7 +86,7 @@ header{
     text-align: center;
     height: 0.4rem;
     line-height: 0.4rem;
-    width: calc(100% - .8rem);
+    width: 100%;
     font-size: .17rem;
     padding: 0 .4rem;
     text-overflow: ellipsis;
@@ -262,4 +260,3 @@ header{
 }
 
 </style>
->>>>>>> yang

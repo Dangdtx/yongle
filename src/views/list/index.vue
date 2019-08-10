@@ -22,7 +22,7 @@
         <v-touch tag="div" class="goods-list" v-for="(item,index) in activelist"  
         
         @tap="handleToDetail(item.PRODUCTID)" :key="index" >
-          <a :href="'-'+item.PRODUCTID +'.html'" class="goods-con">
+          <a class="goods-con">
             <div class="left">
               <img
                 :src= "item.PBIGIMG|ToImg('//static.228.cn')"
@@ -84,7 +84,7 @@ export default {
   }
 };
 </script>
-<style>
+<style scoped>
 html {
   font-size: 100px;
 }
@@ -166,6 +166,8 @@ h2, h3, h4, h5, h6 {
 }
 .tc {
     text-align: center;
+    height:0.22rem;
+    line-height:0.22rem;
 }
 .tl {
     text-align: left;
@@ -236,6 +238,7 @@ img {
     width: calc(100% - 1rem);
 }
 .goods-con .right .name {
+  font-size:0.14rem;
     height: .4rem;
     line-height: .2rem;
     display: block;
@@ -253,6 +256,7 @@ img {
     overflow: hidden;
 }
 .mt10 {
+  font-size:0.1rem;
     margin-top: 0.1rem;
 }
  

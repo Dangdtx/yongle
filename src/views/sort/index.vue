@@ -33,7 +33,9 @@
             </ul>
             <div class="type-tab" v-show="flag">
             <ol class="cl">
-            <li class="active"  v-for="(item,index) in fcitys">
+            <li class="active"
+              v-for="(item,index) in fcitys" 
+              :key="index">
  					{{item.CITYNAME}}	
                 </li> 
             <v-touch class="" 
@@ -141,9 +143,9 @@ export default {
         //     this.$router.push("/second")
         //     this.handleToggleCity(params)
         // },
-        handlego(id,name){
-            console.log(id,name);
-            this.$router.push({name:"detail",params:{id,name}})
+        handlego(id){
+            console.log(id);
+            this.$router.push({name:"detail",params:{id}})
             
         }
 
@@ -184,7 +186,7 @@ ul{list-style:none;}
     text-align: center;
     height: 0.4rem;
     line-height: 0.4rem;
-    width: calc(100% - .8rem);
+    width: 100%;
     font-size: .17rem;
     padding: 0 .4rem;
     text-overflow: ellipsis;
@@ -406,3 +408,4 @@ section>ul>li>i{
 }
     
 </style>
+

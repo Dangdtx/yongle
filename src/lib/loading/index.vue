@@ -1,9 +1,5 @@
 <template>
-<<<<<<< HEAD
    <div class="loader" v-if="flag" >
-=======
-   <div class="loader" v-if="flag">
->>>>>>> yang
 	<div class="loader-inner">
 		<div class="loader-line-wrap">
 			<div class="loader-line"></div>

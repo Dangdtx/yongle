@@ -4,7 +4,6 @@ export default{
     name:"sort",
     meta:{ 
         flag:true,
- 
         auth:false
     }
 }
