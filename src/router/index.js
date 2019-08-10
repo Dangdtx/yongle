@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import Vue from "vue";
 import VueRouter from "vue-router";
 import home from "./home"
@@ -17,23 +17,10 @@ import narrate from "./narrate"
  
 
 Vue.use(VueRouter);
-=======
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import first from "./first"
-import second from "./second"
-import search from "./search"
-import mine from "./mine"
-import detail from "./detail"
-import buy from "./buy"
-Vue.use(VueRouter)
->>>>>>> yang
-
 export default new VueRouter({
     routes:[
         {
             path:"/",
-<<<<<<< HEAD
             redirect:"/home",
         },
         home,
@@ -48,16 +35,5 @@ export default new VueRouter({
         list,  
         cityList,
         narrate
- 
-=======
-            redirect:"/first"
-        },
-        first,
-        second,
-        search,
-        mine,
-        detail,
-        buy
->>>>>>> yang
     ]
 })

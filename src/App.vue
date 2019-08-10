@@ -1,5 +1,5 @@
 <template>
-<<<<<<< HEAD
+
   <div id="app">  
     <keep-alive>
        <router-view></router-view> 
@@ -14,25 +14,10 @@
 import {MessageBox} from "lib/message/index.js"
 import TabBar from "common/tabBar" 
  import http from "utils/http.js"   
-=======
-  <div id="app">
-    
-    <router-view></router-view>
-    
-    <TabBar v-if="$route.meta.tabBar"/>
-    <loading/>
-  </div>
-</template>
 
-<script>
-import TabBar from './common/tabBar'
-import http from "utils/http.js"
-import Loading from "./lib/loading"
->>>>>>> yang
 export default {
   name:"APP",
   components:{
-<<<<<<< HEAD
     TabBar,  
   },
   created(){
@@ -53,28 +38,13 @@ export default {
     // })
 
   }
-=======
-    TabBar,
-    Loading
-  },
-  created() {
-    http("get","/server/category/default.json").then((data)=>{
-      // console.log(data);
-      
-    })
-  },
->>>>>>> yang
+
   
 }
 </script>
 
 <style lang="scss">
-<<<<<<< HEAD
 #app {
   height:100%;
 }
- 
-=======
-
->>>>>>> yang
 </style>
